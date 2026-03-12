@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Development Gallery</title>
+<style>
+/* PAGE STYLE */
+body{
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    background:linear-gradient(135deg,#eef2f7,#dfe9f3);
+    scroll-behavior: smooth; /* smooth scrolling */
+}
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#2dd3ba,#0ea5e9);
+    color:white;
+    text-align:center;
+    padding:30px;
+    letter-spacing:1px;
+}
+header h1{
+    margin:0;
+    font-size:32px;
+}
+header p{
+    margin-top:8px;
+    opacity:0.9;
+}
+/* HERO SECTION */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    height:350px; /* standard fixed height */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("back1.png") no-repeat center center;
+    background-size: cover; /* ensures image covers section */
+    color: white;
+    padding: 20px;
+}
+.hero-content{
+    max-width:600px;
+}
+.hero h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+.hero p{
+    font-size:16px;
+    margin-bottom:20px;
+}
+.hero button{
+    padding:10px 20px;
+    border:none;
+    background:#0ea5e9;
+    color:white;
+    font-size:14px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.hero button:hover{
+    background:#0284c7;
+}
+/* GALLERY GRID */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+/* CARD DESIGN */
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    text-align:center;
+    transition:0.4s;
+    position:relative;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+/* IMAGE */
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:0.5s;
+}
+.card:hover img{
+    transform:scale(1.15);
+}
+/* CAPTION */
+.caption{
+    padding:12px;
+    font-size:20px;
+    font-weight:bold;
+    color:#0ea5e9;
+}
+/* DESCRIPTION */
+.description{
+    padding:0 18px 18px 18px;
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:20px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>Web Development Technologies</h1>
+<p>Mini Web World Assignment</p>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="hero-content">
+<h2>Explore Modern Web Development</h2>
+<p>
+Learn about the technologies used to build modern websites such as HTML,
+CSS, JavaScript, React, Node.js and Databases.
+</p>
+<!-- Button links to gallery section -->
+<a href="#gallery"><button>Explore Technologies</button></a>
+</div>
+</section>
+
+
+<div class="gallery" id="gallery">
+
+<div class="card">
+<img src="HTML.png">
+<div class="caption">HTML</div>
+<p class="description">
+HTML builds the structure of a webpage. It organizes text, images,
+links, and other elements to create the basic layout of a website.
+</p>
+</div>
+
+<div class="card">
+<img src="css.png">
+<div class="caption">CSS</div>
+<p class="description">
+CSS is responsible for styling websites. It controls colors,
+fonts, spacing, layouts, and animations to make pages visually attractive.
+</p>
+</div>
+
+<div class="card">
+<img src="Java .png">
+<div class="caption">JavaScript</div>
+<p class="description">
+JavaScript adds interactivity to websites. It allows features like
+form validation, sliders, dynamic updates, and interactive UI elements.
+</p>
+</div>
+
+<div class="card">
+<img src="React .png">
+<div class="caption">React</div>
+<p class="description">
+React is a modern JavaScript library used to build dynamic user
+interfaces and single-page applications efficiently.
+</p>
+</div>
+
+<div class="card">
+<img src="Node.js .png">
+<div class="caption">Node.js</div>
+<p class="description">
+Node.js allows developers to run JavaScript on the server side
+and build scalable backend applications and APIs.
+</p>
+</div>
+
+<div class="card">
+<img src="DATABASE.png">
+<div class="caption">Database</div>
+<p class="description">
+Databases store and manage data for applications. Popular
+databases include MySQL, MongoDB, and PostgreSQL.
+</p>
+</div>
+</div>
+<footer>
+<p>© 2026 Mini Web World | Created for Web Development Assignment</p>
+</footer>
+
+</body>
+</html>
